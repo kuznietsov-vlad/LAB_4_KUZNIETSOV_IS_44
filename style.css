@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    margin: 24px auto;
+    max-width: 900px;
+    padding: 0 16px;
+    background-color: #ffffff;
+    color: #111111;
+}
+
+h2 {
+    margin-bottom: 12px;
+}
+
+p, ul, ol {
+    margin-bottom: 12px;
+}
+
+.doc-item {
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    cursor: pointer;
+}
+
+/* Стани перемикання кольорів при кліку */
+.highlight-id {
+    background-color: #1e3a8a;
+    color: #ffffff;
+}
+
+.highlight-query {
+    background-color: #fef08a;
+    color: #111827;
+}
+
+.media-block {
+    margin-top: 20px;
+}
+
+.image-box {
+    margin-bottom: 12px;
+}
+
+.image-box img {
+    display: block;
+    width: 480px;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #d1d5db;
+    transition: width 0.2s ease;
+}
+
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.controls button {
+    padding: 8px 14px;
+    font-size: 14px;
+    cursor: pointer;
+    border: 1px solid #374151;
+    background-color: #f3f4f6;
+    color: #111827;
+    border-radius: 4px;
+}
+
+.controls button:hover {
+    background-color: #e5e7eb;
+}

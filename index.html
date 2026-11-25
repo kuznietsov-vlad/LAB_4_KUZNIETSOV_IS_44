@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Кузнєцов Владислав, ІС-44, Лабораторна робота 4, JavaScript, DOM">
+    <meta name="description" content="Лабораторна робота №4 з курсу Основи FE-технологій, Варіант 7">
+    <title>Кузнєцов Владислав Юрійович, ІС-44, ЛР-4, Варіант 7</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. ПІБ (h2) -->
+    <h2 id="el-1" class="doc-item">Кузнєцов Владислав Юрійович</h2>
+
+    <!-- 2. Дата і місце народження -->
+    <p id="el-2" class="doc-item">Дата і місце народження: м. Київ, Україна, 11.01.2007.</p>
+
+    <!-- 3. Освіта -->
+    <p id="el-3" class="doc-item">Освіта: НТУУ «КПІ ім. Ігоря Сікорського», факультет інформатики та обчислювальної техніки, група ІС-44.</p>
+
+    <!-- 4–6. Хобі (ненумерований список — елементи 4, 5, 6) -->
+    <p id="el-4" class="doc-item">Хобі:</p>
+    <ul class="hobby-list">
+        <li id="el-5" class="doc-item">Бокс</li>
+        <li id="el-6" class="doc-item">Гітара</li>
+        <li id="el-12" class="doc-item">Міксологія</li>
+        <li id="el-13" class="doc-item">Готування</li>
+    </ul>
+
+    <!-- 7–9. Улюблені фільми/книги (елемент 7 — заголовок, елемент 8 — getElementById, елемент 9 — querySelector) -->
+    <p id="el-7" class="doc-item">Улюблені фільми:</p>
+    <ol class="movie-list">
+        <li id="target-8" class="doc-item">«Початок» (Inception), 2010</li>
+        <li id="target-9" class="doc-item target-next">«1+1» (Intouchables), 2011</li>
+        <li id="el-10" class="doc-item">«Джанго вільний», 2012</li>
+    </ol>
+
+    <!-- Опис вподобаного міста -->
+    <p id="el-11" class="doc-item">
+        Прага (чеськ. Praha) — столиця та найбільше місто Чеської Республіки, розташоване на берегах Влтави в історичній області Богемія. Місто приваблює поєднанням старовинної архітектури, мостів та затишних вуличок.
+    </p>
+
+<!-- Блок із фото та 4 кнопками керування -->
+    <div class="media-block">
+        <div id="image-box" class="image-box">
+            <a id="city-link" href="https://praha.eu" target="_blank" rel="noopener noreferrer">
+                <img
+                    id="city-img"
+                    src="prague.jpg"
+                    alt="Панорама Праги"
+                >
+            </a>
+        </div>
+
+        <div class="controls">
+            <button type="button" id="btn-add">Додати</button>
+            <button type="button" id="btn-zoom-in">Збільшити</button>
+            <button type="button" id="btn-zoom-out">Зменшити</button>
+            <button type="button" id="btn-remove">Видалити</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
